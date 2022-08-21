@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="main.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <sidebar>
+      <div class="dot">
+      <span class="status red"></span>
+      <span class="status yellow"></span>
+      <span class="status green"></span>
+      </div>
+       <div class="sidebar">
+          <div class="icons">
+                <p>dappr</p>
+                <ul>
+                   <li><a href=""><i class='bx bx-home-circle'></i></a></li>
+                   <li><a href=""><i class='bx bx-bar-chart-square' ></i></a></li>
+                   <li><a href=""><i class='bx bx-tachometer'></i></a></li>
+                   <li><a href=""><i class='bx bx-envelope' ></i></a></li>
+                   <li><a href=""><i class='bx bx-play-circle'></i></a></li>
+                   <li><a href=""><i class='bx bx-popsicle'></i></a></li>
+                   <li><a href=""><i class='bx bx-file'></i></a></li>
+                   <li><a href=""><i class='bx bx-money-withdraw'></i></a></li>
+                 </ul> 
+              </div>
+              <div class="setting">     
+                    <ul><li><a href=""><i class='bx bx-cog' ></i></a></li></ul>
+             </div>  
+       </div> 
+    </sidebar>
+  
+    <header>
+      <h1>Good morning, Ahmet!</h1>
+        <div class="icons">
+          <i class='bx bx-chevron-left'></i>
+          <i class='bx bx-chevron-right'></i>
+       </div>
+      </header>
+  
+    <main>       
+        <div class="board">
+          <div class="board-icons">
+            <i class='bx bx-wallet-alt'></i>
+            <i class='bx bx-dots-vertical-rounded'></i>
+          </div>
+          <div class="board-content">
+            <p>$143</p>
+            <span>Your bank <br>balance</span>
+          </div>
+        </div>
+        
+        <div class="board">
+          <div class="board-icons">
+            <i class='bx bx-circle-three-quarter'></i>
+            <i class='bx bx-dots-vertical-rounded'></i>
+          </div>
+          <div class="board-content">
+            <p>75%</p>
+              <span>Company spends <br> card spending</span>
+          </div>
+        </div>
+  
+          <div class="board">
+        <div class="board-icons">
+         <i class='bx bx-stopwatch'></i>
+          <i class='bx bx-dots-vertical-rounded'></i>
+        </div>
+        <div class="board-content">
+          <p>7</p>
+          <span>Employees <br> working today</span>
+        </div>
+      </div> 
+     
+          <div class="board">
+        <div class="board-icons">
+          <i class='bx bx-money-withdraw'></i>
+          <i class='bx bx-dots-vertical-rounded'></i>
+        </div>
+        <div class="board-content">
+          <p>$328</p>
+          <span>This week's <br> card spending</span>
+        </div>
+      </div>
+    </main>
+    
+    
+    <card>
+          <div class="cards">
+            <h4>New clients</h4>
+            <div class="card-main">
+              <span>54</span>
+              <p>+18.7%</p>
+            </div>
+          </div>
+      
+          <div class="cards">
+            <h4>Invoices overdue</h4>
+             <div class="card-main">
+               <span>6</span>
+               <p id="red">+2.7%</p>
+             </div>
+          </div>
+    
+    </card>
+    <chart>
+      <div class="table">
+  
+            <div class="title">
+          <p>Revenue</p>
+          <span>Last 7 days VS prior week</span>
+        </div>
+         <canvas id="myChart"></canvas>
+      </div>
+    </chart>
+    
+    
+    
+      <email>
+        <div class="header_fixed">
+          <table>
+             <thead>
+            <tr id="recent">
+              <td></td>
+              <td>Name</td>
+              <td>Email</td>
+              <td>Department</td>
+              <td>Action</td>
+            </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td><img src="../img/1.jpg" alt=""></td>
+                  <td>Hannah Morgan</td>
+                  <td>Meeting scheduled</td>
+                  <td>Human Resources</td>
+                  <td><button>View</button></td>
+                </tr>
+                  <tr>
+                  <td><img src="../img/2.jpg" alt=""></td>
+                  <td>Megan Clark</td>
+                  <td>Update on marketing campaign</td>
+                  <td>UI Developer</td>
+                  <td><button>View</button></td>
+                </tr>
+                  <tr>
+                  <td><img src="../img/3.jpg" alt=""></td>
+                  <td>Brandon Williams</td>
+                  <td>Designly 2.0 is about to launch</td>
+                  <td>Frontend Developer</td>
+                  <td><button>View</button></td>
+                </tr>
+                  <tr>
+                  <td><img src="../img/4.jpg" alt=""></td>
+                  <td>Reid Smith</td>
+                  <td>My friend Julie loves launch</td>
+                  <td>UI / UX Designer</td>
+                  <td><button>View</button></td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+    </email>
+  
+  
+    <rightBoard>
+      <div class="icerik">
+        <div class="header">
+         <i class='bx bxs-backpack'></i>
+         <i class='bx bx-bell'></i>
+         <i class='bx bx-message-alt-dots'></i>
+         <img  src="../img/3.jpg" alt="">
+         <i class='bx bx-chevron-down' ></i>
+        </div>
+     
+        <div class="main">
+          <div class="content">
+           <h3>Your to-Do list</h3>
+          <div class="toDo">
+             <div class="icon">
+             <i class='bx bx-border-outer'></i>
+              </div>
+              <div class="paragraf"> 
+              <p>Run payroll</p>
+              <p id="bottomParag">Mar 4 at 6:00 pm</p>
+              </div>
+          </div>
+          <div class="toDo">
+            <div class="icon">
+              <i class='bx bxs-conversation'></i>
+             </div>
+             <div class="paragraf"> 
+             <p>Project Discussion</p>
+             <p id="bottomParag">Mar 4 at 9:00 pm</p>
+             </div>
+         </div>
+         <div class="toDo">
+          <div class="icon">
+            <i class='bx bxs-color'></i>
+           </div>
+           <div class="paragraf"> 
+           <p>New icon version</p>
+           <p id="bottomParag">Mar 4 at 10:00 pm</p>
+           </div>
+       </div>
+          
+           <div class="toDo">
+             <div class="icon">
+                <i class='bx bxs-watch'></i>  
+              </div>
+              <div class="paragraf"> 
+              <p>Review time off request</p>
+              <p id="bottomParag">Mar 7 at 6:00 pm</p>
+              </div>
+          </div>
+          
+           <div class="toDo">
+             <div class="icon">
+            <i class='bx bx-clipboard'></i>
+              </div>
+              <div class="paragraf"> 
+              <p>Sign board resolution</p>
+              <p id="bottomParag">Mar 12 at 6:00 pm</p>
+              </div>
+          </div>
+          
+           <div class="toDo">
+             <div class="icon">
+               <i class='bx bx-message-square-check'></i>
+              </div>
+               <div class="paragraf"> 
+              <p>Finish onboarding Tony</p>
+              <p id="bottomParag">Mar 12 at 7:00 pm</p>
+              </div>
+          </div>
+        </div>
+     </div>
+    
+    <div class="footer">
+       <div class="card">
+         
+         <div class="content">
+        <h4 id="title">Board meeting</h4>
+        <p id="time"><p class="status"></p>Feb 22 at 6:00 PM</p>
+         </div> 
+        <p id="parag">You have been invited to attend<br>a metting of the Board Directors.</p> 
+     
+     </div>
+    </div>
+   </div>
+    </rightBoard>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>
